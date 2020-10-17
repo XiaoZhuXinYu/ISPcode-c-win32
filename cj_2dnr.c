@@ -886,7 +886,8 @@ void Convolution2D(unsigned char * data, unsigned char* dstImg, unsigned int wid
                     }
                 }
 
-                tmpData[y * width + x] = Clamp2Byte(((factor * r) >> 8) + bias);
+//                tmpData[y * width + x] = Clamp2Byte(((factor * r) >> 8) + bias);
+                tmpData[y * width + x] = r;
             }
         }
     }
